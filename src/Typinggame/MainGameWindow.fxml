@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: #73570a;" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Typinggame.GameController">
+    <children>
+        <Text fx:id="seconds" layoutX="53.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="72.64990234375">
+            <font>
+                <Font name="Calibri" size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="137.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+            <font>
+                <Font name="Calibri" size="9.0" />
+            </font>
+        </Text>
+        <Text layoutX="272.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tries">
+            <font>
+                <Font name="Calibri" size="9.0" />
+            </font>
+        </Text>
+        <Text layoutX="362.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precision %">
+            <font>
+                <Font name="Calibri" size="9.0" />
+            </font>
+        </Text>
+        <Text fx:id="wordMinute" layoutX="279.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="42.64990234375">
+            <font>
+                <Font name="Calibri" size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="accuracy" layoutX="367.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="49.0">
+            <font>
+                <Font name="Calibri" size="21.0" />
+            </font>
+        </Text>
+        <TextField fx:id="userWord" alignment="CENTER" layoutX="201.0" layoutY="222.0" onKeyPressed="#startGame" prefHeight="42.0" prefWidth="338.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Text fx:id="InitialWords" layoutX="216.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="NextWords" fill="#0000005b" layoutX="362.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="word" textAlignment="CENTER" wrappingWidth="184.74749755859375">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="correct" fitHeight="51.0" fitWidth="49.0" layoutX="284.0" layoutY="302.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+        <ImageView fx:id="wrong" fitHeight="51.0" fitWidth="49.0" layoutX="284.0" layoutY="302.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+        <Button  style="-fx-background-color: #800080;" fx:id="AnotherOne" layoutX="273.0" layoutY="351.0" mnemonicParsing="false" onAction="#toMainMenu" text="Play again" />
+    </children>
+</AnchorPane>
